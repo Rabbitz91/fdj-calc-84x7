@@ -1,0 +1,21 @@
+FLOWERS BY DANA — PWA V4
+
+NEW:
+- Accidental/double-tap zoom disabled.
+- Kassenbon -> AUF HANDY SPEICHERN.
+- Kassenbon -> TEILEN.
+- Receipt is rendered as PNG with the embedded Flowers by Dana logo and current totals.
+- On iPhone, Save/Share opens the native iOS share sheet; choose Save Image / In Fotos sichern or Save to Files.
+
+UPDATE GITHUB:
+Replace/upload these root files:
+index.html
+manifest.json
+sw.js
+icon-192.png
+icon-512.png
+
+After GitHub Pages deploys:
+1. Open site in Safari and refresh.
+2. If old version remains, remove old Home Screen app and add it again.
+3. Select products -> KASSENBON -> AUF HANDY SPEICHERN.

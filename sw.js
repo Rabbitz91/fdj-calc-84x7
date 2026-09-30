@@ -1,3 +1,5 @@
-const CACHE='dana-v2';const FILES=["./", "index.html", "manifest.json", "icons/icon-192.png", "icons/icon-512.png", "receipt-logo.png", "images/Steckschwamm.jpg", "images/Chrysantheme_Baltica_Weiss.jpg", "images/Eustoma_Alissa_Pink.jpg", "images/Rose_Mayfield.jpg", "images/Eucalyptus_Cinerea_Lang.jpg", "images/Steckschwamm_Ring_24cm.jpg", "images/Papier.jpg", "images/Pistacia_Lentisco.jpg", "images/Xerophyllum_Beregras_Orca.jpg", "images/Gerbera_Mini_Bieber.jpg", "images/Brassica_Crane_Queen.jpg", "images/Matthiola_Impala_Apricot.jpg"];
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));
-self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));
+const CACHE='dana-v4';
+const FILES=['./index.html','./manifest.json','./icon-192.png','./icon-512.png'];
+self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)))});
+self.addEventListener('activate',e=>e.waitUntil(Promise.all([caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()])));
+self.addEventListener('fetch',e=>e.respondWith(fetch(e.request).then(r=>{let c=r.clone();caches.open(CACHE).then(x=>x.put(e.request,c));return r}).catch(()=>caches.match(e.request).then(r=>r||caches.match('./index.html')))));
