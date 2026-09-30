@@ -18,12 +18,12 @@ button.on,.plus{background:#b49a51;color:#090909}main{padding:12px}.grid{display
 .list .card{display:flex;margin-bottom:8px}.list .card img{width:90px;height:90px;flex:none}.list .pad{flex:1}.list .name{min-height:0}
 .receipt{max-width:520px;margin:auto;background:#fff;color:#111;padding:20px;border-radius:5px}.receipt .rlogo{display:block;max-width:210px;max-height:120px;object-fit:contain;margin:0 auto 10px}.receipt h2{text-align:center;margin:5px 0 18px}
 .rr{display:flex;justify-content:space-between;gap:12px;margin:7px 0}.sum{font-size:22px;font-weight:900;border-top:2px solid #111;padding-top:10px;margin-top:12px}
-.install{font-size:12px;color:#bbb;margin-top:8px}.receipt-actions{display:flex;gap:10px;flex-wrap:wrap;max-width:520px;margin:14px auto}
+.install{font-size:12px;color:#bbb;margin-top:8px}.clearbtn{background:#3a1818!important;color:#fff!important}.receipt-actions{display:flex;gap:10px;flex-wrap:wrap;max-width:520px;margin:14px auto}
 .receipt-actions button{flex:1;min-width:145px;background:#b49a51;color:#090909;font-size:15px}
 .hidden{display:none}
 </style></head>
 <body><header><div class="top"><div class="brand">FLOWERS BY DANA JAROSUS</div><div class="total" id="total">0,00 €</div></div>
-<div class="tabs"><button id="gbtn" class="on" onclick="mode='grid';render()">▦ NORMAL</button><button id="lbtn" onclick="mode='list';render()">☷ LISTE A–Z</button><button id="rbtn" onclick="receipt()">KASSENBON</button></div>
+<div class="tabs"><button id="gbtn" class="on" onclick="mode='grid';render()">▦ NORMAL</button><button id="lbtn" onclick="mode='list';render()">☷ LISTE A–Z</button><button id="rbtn" onclick="receipt()">KASSENBON</button><button class="clearbtn" onclick="clearAll()">ALLES LÖSCHEN</button></div>
 <div class="install">iPhone: Safari → Teilen → „Zum Home-Bildschirm“</div></header><main id="app"></main>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 <script>
@@ -39,6 +39,17 @@ function updateTotal(){let t=P.reduce((s,p,i)=>s+gross(p)*qty(i),0);document.get
 function render(scroll=true){document.getElementById('gbtn').classList.toggle('on',mode==='grid');document.getElementById('lbtn').classList.toggle('on',mode==='list');document.getElementById('rbtn').classList.remove('on');
 let a=document.getElementById('app');a.className=mode==='grid'?'grid':'list';a.innerHTML=ordered().map(([p,i])=>`<div class="card"><img src="${p[5]}"><div class="pad"><div class="name">${p[0]}</div><div class="meta">${p[1].toLocaleString('de-DE',{minimumFractionDigits:2})} € netto · ${p[2]}% MwSt.</div><div class="qty"><button onclick="step(${i},-1)">−</button><input inputmode="decimal" value="${qty(i)||''}" placeholder="0" onchange="setq(${i},this.value)"><button class="plus" onclick="step(${i},1)">+</button><span class="line">${money(gross(p)*qty(i))}</span></div></div></div>`).join('');updateTotal()}
 
+function clearAll(){
+  const hasAny=Object.values(Q).some(v=>Number(v)>0);
+  if(!hasAny){ return; }
+  if(confirm('Wirklich alles löschen und einen neuen Auftrag starten?')){
+    Q={};
+    localStorage.removeItem('danaQ');
+    localStorage.setItem('danaQ','{}');
+    mode='grid';
+    render();
+  }
+}
 async function receiptBlob(){
   const el=document.querySelector('.receipt');
   if(!el) throw new Error('Kein Kassenbon geöffnet');

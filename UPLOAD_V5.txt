@@ -1,0 +1,18 @@
+FLOWERS BY DANA — PWA V5
+
+NEW:
+- ALLES LÖSCHEN button.
+- Confirmation before deleting.
+- Clears every saved quantity from the phone/local storage.
+- Returns to an empty calculator ready for a new bouquet/order.
+- Existing receipt save/share remains.
+
+GitHub update:
+Replace the same 5 root files:
+index.html
+manifest.json
+sw.js
+icon-192.png
+icon-512.png
+
+After deployment, refresh Safari once. If the Home Screen app still shows the old version, close/reopen it or remove/add it again.
