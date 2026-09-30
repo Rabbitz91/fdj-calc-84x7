@@ -1,0 +1,3 @@
+const CACHE='dana-v1';const FILES=["./", "index.html", "manifest.json", "icons/icon-192.png", "icons/icon-512.png", "images/Steckschwamm.jpg", "images/Chrysantheme_Baltica_Weiss.jpg", "images/Eustoma_Alissa_Pink.jpg", "images/Rose_Mayfield.jpg", "images/Eucalyptus_Cinerea_Lang.jpg", "images/Steckschwamm_Ring_24cm.jpg", "images/Papier.jpg", "images/Pistacia_Lentisco.jpg", "images/Xerophyllum_Beregras_Orca.jpg", "images/Gerbera_Mini_Bieber.jpg", "images/Brassica_Crane_Queen.jpg", "images/Matthiola_Impala_Apricot.jpg"];
+self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));
+self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));
