@@ -1,10 +1,15 @@
-Flowers by Dana Jarosus — standalone iPhone PWA v1
+Flowers by Dana Jarosus — PWA V2 FIXED
 
-IMPORTANT: iPhone cannot install a PWA directly from a ZIP/file:// URL.
-The folder must first be served over HTTPS once. After opening the HTTPS address in Safari:
-1. Tap Share.
-2. Tap "Add to Home Screen" / "Zum Home-Bildschirm".
-3. Open it from the DJ icon.
-4. After the first successful load, the service worker caches the app for offline use.
+FIXED:
+- All flower/material photos are embedded directly into index.html.
+- Exact supplied Flowers by Dana Jarosus receipt logo is included and embedded.
+- Offline cache bumped to dana-v2.
 
-This v1 stores quantities locally on the iPhone and contains the catalog/images locally in the PWA package.
+GITHUB UPDATE:
+Upload/replace ALL files from this folder in the SAME GitHub repository.
+Then on iPhone:
+1. Remove the old Home Screen app.
+2. In Safari open the GitHub Pages address.
+3. Refresh the page once.
+4. Confirm the flower photos and receipt logo appear.
+5. Share -> Add to Home Screen again.
