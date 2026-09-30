@@ -1,4 +1,4 @@
-Flowers by Dana Jarosus — PWA V2 FIXED
+
 
 FIXED:
 - All flower/material photos are embedded directly into index.html.
