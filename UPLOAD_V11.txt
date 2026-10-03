@@ -1,0 +1,10 @@
+V11
+- Added the exact supplied green Di St Marty photo.
+- Everything else from V10 remains unchanged.
+
+Replace on GitHub:
+index.html
+manifest.json
+sw.js
+icon-192.png
+icon-512.png
