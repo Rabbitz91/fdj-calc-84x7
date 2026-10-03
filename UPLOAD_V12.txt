@@ -1,0 +1,11 @@
+V12
+- Di St Marty photo cropped inside the original rounded corners.
+- Image is now a true square and fills the product tile like the other flowers.
+- Everything else unchanged from V11.
+
+Replace on GitHub:
+index.html
+manifest.json
+sw.js
+icon-192.png
+icon-512.png
