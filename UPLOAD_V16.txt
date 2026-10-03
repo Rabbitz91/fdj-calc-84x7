@@ -1,0 +1,19 @@
+FLOWERS BY DANA — V16
+
+FIXED:
+- Correct clean first/left photos for products 20–28.
+- Rose Snowstorm now contains ONLY the flower photo, no screenshot text.
+- Eustoma Excalibur Hot Lips corrected.
+- Rose Plaza Mix corrected.
+- Eucalyptus Cinerea Kurz corrected.
+- Matthiola verschiedene Farben, High & Bridal, Beargrass, Astilbe, Radost and Gerbera Mini Wasser corrected.
+- Aralia Medium 35 cm: €1.99 is a PACK OF 10, therefore Einkauf per piece = €0.199 (displayed €0.20).
+- Existing devices that still have the old Aralia €1.99 saved are automatically corrected to €0.199.
+- All V15 features remain, including Kunde/Einkauf/Umsatz-Gewinn bons and IDs.
+
+Replace on GitHub:
+index.html
+manifest.json
+sw.js
+icon-192.png
+icon-512.png
