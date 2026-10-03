@@ -1,0 +1,20 @@
+FLOWERS BY DANA — V6
+NEW:
+• No VAT/MwSt. on either receipt.
+• Two receipts: KUNDE and VERKÄUFER.
+• KUNDE: selling unit price, each line total, labor cost, final amount due.
+• VERKÄUFER: purchase unit price, each line total, total purchase cost.
+• PREISE tab.
+• Editable purchase price for every flower/material.
+• Global selling markup slider, default 40%.
+• Individual selling price override; leave blank to use global markup.
+• Editable labor cost per bouquet.
+• Settings persist locally on the iPhone.
+• Existing clear-all, photos, offline mode and receipt save/share remain.
+
+GitHub: replace these 5 files:
+index.html
+manifest.json
+sw.js
+icon-192.png
+icon-512.png
