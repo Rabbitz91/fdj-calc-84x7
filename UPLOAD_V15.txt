@@ -1,0 +1,25 @@
+FLOWERS BY DANA — V15
+
+NEW:
+- Rose Snowstorm added at Einkauf 0,65 €, using first/left supplied photo.
+- Third receipt: UMSATZ / GEWINN.
+- Third receipt ID: FBDJG + DDMMYYYY + daily 5-digit serial.
+- Save/Share now creates all THREE PNG receipts at once:
+  FBDJK... = Kunde
+  FBDJE... = Einkauf
+  FBDJG... = Umsatz/Gewinn
+- All three use the exact same date and serial number.
+- Gewinn receipt shows each item's Einkauf, Verkauf and profit.
+- Summary shows EINKAUF GESAMT, UMSATZ GESAMT and GEWINN.
+- Arbeitskosten are included in Umsatz/Gewinn because they are charged to customer and no separate labor purchase cost is currently configured.
+- All V14/V13 functionality remains.
+
+Formula:
+Gewinn = Umsatz (selling flower prices + labor) - Einkauf (flower purchase prices)
+
+Replace on GitHub:
+index.html
+manifest.json
+sw.js
+icon-192.png
+icon-512.png

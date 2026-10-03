@@ -1,0 +1,18 @@
+FLOWERS BY DANA — V14 FULL CATALOG
+
+Added the flower catalog from the supplied screenshots/table using ONLY the first/left photo.
+
+New catalog entries added: 23
+Purchase prices use the user's supplied table. Existing products already in the app were not duplicated.
+
+Important:
+- The supplied table says R Gr Showstorm €0.65, but there was no separately mounted clean Snowstorm screenshot in this batch, so I did not invent an image/product entry from outside sources.
+- Existing products such as Pistacia, Eustoma Rosita White, Gerbera Mini Wasser, Rose Ramonda, Xerophyllum etc. remain as existing entries rather than duplicates.
+- All V13 bon ID / dual-save functionality remains.
+
+Replace on GitHub:
+index.html
+manifest.json
+sw.js
+icon-192.png
+icon-512.png
