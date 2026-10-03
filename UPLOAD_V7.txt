@@ -1,0 +1,18 @@
+FLOWERS BY DANA — V7
+
+Changes:
+- Receipt is slightly narrower.
+- Exact logo is much larger and uses almost the full receipt width.
+- Removed duplicate "FLOWERS BY DANA JAROSUS" text below the logo.
+- Cleaner receipt top area.
+- Markup slider updates LIVE while dragging.
+- Slider supports keyboard Left/Right arrows in exact 1% steps.
+- Live selling-price previews update while the slider moves.
+- All V6 pricing, two receipts, no VAT, save/share, clear-all and offline features remain.
+
+GitHub: replace:
+index.html
+manifest.json
+sw.js
+icon-192.png
+icon-512.png
