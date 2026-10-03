@@ -1,0 +1,24 @@
+FLOWERS BY DANA — V10
+
+Added from the new Bloomways invoice:
+- Aralia Medium 35 cm — Einkauf 1,99 €
+- Di St Marty — Einkauf 0,59 €
+- Eryngium Magnetar Qstar — Einkauf 0,55 €
+- Eustoma Rosita White — Einkauf 1,49 €
+- Gerbera Mini Wasser — Einkauf 0,39 €
+- Helianthus Sonja — Einkauf 0,55 €
+- Rose Countdown — Einkauf 0,55 €
+- Rose Ramonda — Einkauf 0,55 €
+- Trachelium Lake Michigan White — Einkauf 0,59 €
+
+For every supplied flower screenshot, only the FIRST/LEFT photo was used.
+The supplied screenshot contains no photo for Di St Marty, so no invented flower photo was added for it.
+
+These are purchase prices. Your existing markup percentage automatically calculates selling prices.
+
+Replace on GitHub:
+index.html
+manifest.json
+sw.js
+icon-192.png
+icon-512.png
