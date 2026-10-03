@@ -1,0 +1,9 @@
+FLOWERS BY DANA — V9
+- Uses the exact clean logo you supplied.
+- No black top/side lines from the old receipt-logo image.
+- Removed KUNDE – VERKAUF heading from customer receipt.
+- Removed VERKÄUFER – EINKAUFSKOSTEN heading from seller receipt.
+- Logo fills the available receipt width proportionally.
+- All V8 features remain.
+
+Replace on GitHub: index.html, manifest.json, sw.js, icon-192.png, icon-512.png
