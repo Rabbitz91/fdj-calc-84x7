@@ -1,0 +1,23 @@
+FLOWERS BY DANA — V13 BON IDs
+
+SAVE / SHARE now creates BOTH receipts together:
+Customer: FBDJK + DDMMYYYY + 5-digit daily number
+Seller:   FBDJE + DDMMYYYY + 5-digit daily number
+
+Example for 03.10.2026, first saved bouquet:
+FBDJK0310202600001.png
+FBDJE0310202600001.png
+
+The same ID is printed below "Vielen Dank!" on each receipt.
+The counter increases once for each Save/Share operation, and both receipts share the same date + serial.
+Counter is stored locally on that browser/device and resets to 00001 automatically for each new date.
+Maximum serial is 99999 per date.
+
+IMPORTANT: because this is a local PWA, the counter is per device/browser. Saving the same order independently on another phone/PC can generate the same number.
+
+Replace on GitHub:
+index.html
+manifest.json
+sw.js
+icon-192.png
+icon-512.png
