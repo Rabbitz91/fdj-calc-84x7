@@ -1,0 +1,22 @@
+FLOWERS BY DANA — V8 FIXED
+
+FIXES:
+- Product photos are true square tiles on phone AND desktop.
+- Desktop grid automatically uses more columns so square photos are not giant.
+- Receipt is slightly narrower.
+- Exact receipt logo is proportional, much larger, nearly full receipt width.
+- Duplicate FLOWERS BY DANA JAROSUS heading removed.
+- Markup slider updates prices LIVE while dragging.
+- Click/focus slider and Left/Right arrows change exactly 1% per press.
+- Tiny v8 marker appears under top buttons so you can confirm GitHub served the new build.
+
+UPLOAD/REPLACE:
+index.html
+manifest.json
+sw.js
+icon-192.png
+icon-512.png
+
+IMPORTANT AFTER GITHUB DEPLOY:
+Hard refresh desktop with Ctrl+F5.
+On iPhone fully close/reopen the PWA. If it still does not show v8, open the GitHub Pages URL in Safari once and refresh.
