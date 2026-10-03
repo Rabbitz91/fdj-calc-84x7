@@ -1,0 +1,5 @@
+V17
+Flowers first A-Z, greenery second A-Z, materials/supplies last A-Z.
+Removed duplicate/alias entries: Eucalyptus Cinerea Lang Orca, Xerophyllum Beargrass Orca.
+Before: 45 products. After: 43 products.
+All V16 features remain.
